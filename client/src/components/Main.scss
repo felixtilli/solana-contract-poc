@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+
+  .main-box {
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 50vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+  }
+}

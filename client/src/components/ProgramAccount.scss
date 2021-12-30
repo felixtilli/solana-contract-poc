@@ -1,0 +1,25 @@
+.programAccount {
+  margin-top: 15px;
+
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .left {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .left > svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .right > * {
+    display: block;
+  }
+}

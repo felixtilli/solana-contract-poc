@@ -1,0 +1,39 @@
+.programAccountCreator {
+  margin-top: 15px;
+  background-color: #1e1e1e;
+  border-radius: 30px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.programAccountCreator input {
+  color: #fff;
+  border: 0;
+  outline: none;
+  width: calc(100% - 50px);
+  line-height: 30px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.programAccountCreator .sendButton {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.programAccountCreator .sendButton svg {
+  color: #4e44ce;
+  font-size: 16px;
+  margin-top: 7px;
+  margin-left: 3px;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 20px;
+  transition: transform 0.3s;
+
+  .dummy {
+    flex: 1;
+    transition: flex 0.3s;
+  }
+}
+
+.no-wallet {
+  .header {
+    transform: translateY(calc(50vh - (90px / 2)));
+
+    .dummy {
+      flex: 0;
+    }
+  }
+}

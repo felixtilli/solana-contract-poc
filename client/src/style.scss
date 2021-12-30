@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.wallet-notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 15px;
+}
+
+.wallet-notification-error {
+  background: rgba(235, 55, 66, 0.7);
+}
+
+.wallet-notification-info {
+  background: rgba(78, 68, 206, 0.7);
+}
+
+.wallet-notification-success {
+  background: rgba(33, 229, 111, 0.7);
+}
+
+button,
+.main-box {
+  border-radius: 10px !important;
+  box-shadow: rgb(0 0 0 / 25%) 0px 4px 15px 2px;
+}
+
+.wrapper,
+html,
+body,
+body > * {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelWithIcon > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.labelWithIcon svg {
+  margin-right: 10px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

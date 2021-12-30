@@ -1,0 +1,65 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "files": [
+    "public",
+    "src",
+    "craco.config.js",
+    "LICENSE",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "shx rm -rf build/*",
+    "start": "craco start",
+    "build": "yarn clean && craco build",
+    "test": "craco test",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@project-serum/anchor": "^0.19.1-beta.1",
+    "@solana/wallet-adapter-base": "^0.9.0",
+    "@solana/wallet-adapter-react": "^0.15.0",
+    "@solana/wallet-adapter-react-ui": "^0.8.0",
+    "@solana/wallet-adapter-wallets": "^0.14.0",
+    "@solana/web3.js": "^1.20.0",
+    "bs58": "^4.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "react-icons": "^4.3.1",
+    "sass": "^1.45.2"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.3.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.0",
+    "eslint-config-react-app": "^6.0.0",
+    "react-scripts": "^4.0.3",
+    "source-map-explorer": "^2.5.2",
+    "typescript": "^4.4.4",
+    "yarn": "^1.22.11"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "defaults"
+    ]
+  }
+}
