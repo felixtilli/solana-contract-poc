@@ -12,7 +12,12 @@ This project is created with the help of:
 - Anchor
 - Phantom, Solana browser wallet
 
-# Getting started
+# Getting started (localhost)
 1. Follow this guide https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291 for the backend part
 2. Make sure that you are running this on localhost
-3. Go to /client, run "yarn" or "npm install", then run "npm start"
+3. backend/Anchor.toml > replace "devnet" with "localhet"
+4. client/src/App.tsx > replace 'clusterApiUrl("devnet")' with '"http://127.0.0.1:8899"'
+5. Go to /client, run "yarn" or "npm install", then run "npm start"
+
+# Getting started (devnet)
+1. Go to /client, run "yarn" or "npm install", then run "npm start"
