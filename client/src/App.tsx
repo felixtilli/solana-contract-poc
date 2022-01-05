@@ -11,6 +11,7 @@ import { Notification } from "./components/Notification";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
+import { clusterApiUrl } from "@solana/web3.js";
 
 export const App = () => {
   const { wallet } = useWallet();
@@ -29,7 +30,7 @@ export const App = () => {
 export const AppWithProviders = () => {
   const network = WalletAdapterNetwork.Devnet;
 
-  const endpoint = useMemo(() => "http://127.0.0.1:8899", [network]);
+  const endpoint = useMemo(() => clusterApiUrl("devnet"), [network]);
 
   const wallets = useMemo(() => [...getWalletAdapters()], [network]);
 

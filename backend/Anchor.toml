@@ -5,7 +5,7 @@ comments = "7atm44LqV9dpxAM1wVN5oeTYrdofhdDkPGxrkEwsxxLU"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
