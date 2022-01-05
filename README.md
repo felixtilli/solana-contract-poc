@@ -15,4 +15,5 @@ This project is created with the help of:
 
 ## Getting started
 1. Follow this guide https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291 for the backend part
-2. Go to /client, run "yarn" or "npm install", then run "npm start"
+2. Make sure that you are running this on localhost
+3. Go to /client, run "yarn" or "npm install", then run "npm start"
