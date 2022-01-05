@@ -15,10 +15,12 @@ const baseAccount = web3.Keypair.generate();
 interface IProps {
   programAccounts: ProgramAccountInterface[];
   onCommentCreated: () => void;
+  onSearchTextChange: (searchText: string) => void;
 }
 
 export const ProgramAccounts = (props: IProps) => {
   const [text, setText] = useState("");
+  const [searchText, setSearchText] = useState("");
   const { connection } = useConnection();
   const wallet = useAnchorWallet();
 
@@ -90,6 +92,23 @@ export const ProgramAccounts = (props: IProps) => {
       <div className="labelWithIcon">
         <FaComment />
         <Label size="large" text="Comments" />
+        <a
+          onClick={() => {
+            const newValue = !!searchText ? "" : "nice";
+
+            setSearchText(newValue);
+            props.onSearchTextChange(newValue);
+          }}
+        >
+          <Label
+            size="small"
+            text={
+              !!searchText
+                ? "Show all comments"
+                : 'Show comments starting with "nice"'
+            }
+          />
+        </a>
       </div>
       {props.programAccounts.map(
         (item: ProgramAccountInterface, index: number) => {

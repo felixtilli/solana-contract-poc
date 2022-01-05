@@ -46,7 +46,7 @@ export const Main = () => {
     if (!!searchQuery) {
       searchQuery = searchQuery.trim();
 
-      const bytes = Buffer.from(searchQuery, "hex");
+      const bytes = Buffer.from(searchQuery);
       const base58EncodedSearchQuery = bs58.encode(bytes);
 
       config.filters = [
@@ -89,6 +89,9 @@ export const Main = () => {
         <ProgramAccounts
           programAccounts={programAccounts}
           onCommentCreated={fetchProgramAccounts}
+          onSearchTextChange={async (searchText: string) => {
+            await fetchProgramAccounts(searchText);
+          }}
         />
       </div>
     </div>

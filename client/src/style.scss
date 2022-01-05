@@ -50,6 +50,10 @@ body > * {
   flex-direction: column;
 }
 
+.labelWithIcon {
+  position: relative;
+}
+
 .labelWithIcon > * {
   display: inline-block;
   vertical-align: middle;
@@ -57,6 +61,16 @@ body > * {
 
 .labelWithIcon svg {
   margin-right: 10px;
+}
+
+.labelWithIcon a {
+  padding: 1px 10px 3px;
+  margin-top: -3px;
+  background-color: #4e44ce;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
 }
 
 @keyframes fadein {
