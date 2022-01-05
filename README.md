@@ -1,9 +1,18 @@
-# Resources
+# What is this?
+It's a simple Solana program that creates comments and a React web app that uses Anchor to reach the program. I did this project to learn about writing and using Solana programs. Should not be used in production.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resources
+This project is created with the help of:
+- https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291
+- https://github.com/dabit3/complete-guide-to-full-stack-solana-development
+- https://github.com/solana-labs/example-helloworld
+
+# Prerequisites
+- Node.js
+- Solana Tool Suite
+- Anchor
+- Phantom, Solana browser wallet
 
 ## Getting started
-
-Run:
-
-### `npm install`
+1. Follow this guide https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291 for the backend part
+2. Go to /client, run "yarn" or "npm install", then run "npm start"
