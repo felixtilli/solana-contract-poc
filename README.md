@@ -1,4 +1,4 @@
-This is a simple Solana program that creates comments and a React web app that uses Anchor to reach the program. I did this project to learn about writing and using Solana programs. Should not be used in production. At the moment this project only supports using the Phantom browser wallet. 
+This is a simple Solana program that creates comments and a React web app uses the program. I did this project to learn about writing and using Solana programs. Should not be used in production. At the moment this project only supports using the Phantom browser wallet. 
 
 # Resources
 This project is created with the help of:
